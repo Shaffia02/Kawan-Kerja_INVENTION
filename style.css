@@ -178,18 +178,18 @@ body {
 }
 
 .kk-why {
-background-color: var(--biru);
-border-radius: 28px 28px 0 0;
-max-width: 1140px;
-margin-top: 24px;
-margin-bottom: 24px;
-margin-left: auto;
-margin-right:auto;
-padding-top: 56px;
-padding-bottom: 64px;
-padding-left: 90px;
-padding-right: 90px;
-text-align: center;
+    background-color: var(--biru);
+    border-radius: 28px 28px 0 0;
+    max-width: 1140px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 56px;
+    padding-bottom: 64px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
 }
 
 .kk-badge {
@@ -250,7 +250,7 @@ text-align: center;
     margin-top: 0;
     margin-bottom: 8px
 }
-git push
+
 .kk-card p {
     font-size: 0.875rem;
     line-height: 1.6;
@@ -258,3 +258,6 @@ git push
     margin: 0;
 }
 
+.kk-card:last-child h3 {
+    margin-top: -3rem;
+}
