@@ -261,3 +261,99 @@ body {
 .kk-card:last-child h3 {
     margin-top: -3rem;
 }
+
+.kk-explore {
+    max-width: 1140px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.explore__head {
+    text-align: center;
+    max-width: 1050px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore__head h2  {
+    color: #3794FE;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.explore__head p {
+    color: var(--hitam);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.kk-explore__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.explore__photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+.kk-list {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.kk-list__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    border: 1.5px solid var(--hijau);
+    border-radius: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.kk-list__icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.kk-list__icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.kk-list__item h4{
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+    color: var(--hitam);
+}
+
+.kk-list__item p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--hitam);
+}
