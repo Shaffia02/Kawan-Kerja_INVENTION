@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+    --putih: #F5F5F5;
+    --biru: #3794FE;
+    --hijau: #C8F131;
+    --hitam: #343434;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--hitam);
+}
+
+/* navbar start */
+.navbar {
+    position: sticky;
+    height: 83px;
+    background-color: var(--putih);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+.navbar-nav {
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+}
+.navbar-nav a:hover {
+    font-weight: 500;
+}
+
+.navbar p {
+    width: 183px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--biru);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* navbar end */
+
+/* header */
+.header {
+    height: 373px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-title {
+    max-width: 670px;
+    gap: 25px;
+}
+.header-title h1 {
+    font-size: 3.12rem;
+    font-weight: 700;
+}
+.header-title p {
+    font-size: 1.12rem;
+}
+
+.header-search {
+    width: 625px;
+    position: relative;
+}
+.header-search i {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+.header-search input {
+    padding: 15px 160px 15px 65px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.header-search button {
+    padding: 15px 50px;
+    background-color: var(--biru);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: white;
+}
+/* header */
+
+/* rekomen start */
+.rekomen {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.head {
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.head h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #343434;
+}
+.head i {
+    padding: 21px;
+    border-radius: 100px;
+}
+.head i:first-child {
+    background-color: var(--putih);
+}
+.head i:nth-child(2) {
+    background-color: var(--biru);
+}
+
+.rekomen-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+.rekomen-card {
+    max-width: 428px;
+    max-height: 495px;
+    border-radius: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+/* .rekomen-card img {
+    width: ;
+} */
+.card-row {
+    display: flex;
+}
+.card-row p {
+    font-size: 0.93rem;
+    font-weight: 700;
+    padding: 10px 15px;
+    background-color: var(--hijau);
+    border-radius: 50px;
+    line-height: 23px;
+    align-content: center;
+}
+.card-row p i {
+    width: 1rem;
+    height: 1rem;
+    color: red;
+}
+/* rekomen end */
+
+/* footer start */
+footer {
+    height: 417px;
+}
+footer .info p {
+    font-size: 0.94rem;
+    color: white;
+}
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 60px;
+    width: 1280;
+    box-sizing: border-box;
+    background-color: var(--biru);
+    color: white;
+}
+.info-desc {
+    width: 464px;
+    margin-right: 248px;
+}
+.info-desc img {
+    background-color: white;
+    border-radius: 20px;
+}
+.info-add {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+.info-add h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.info-add a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cp {
+    height: 82px;
+    background-color: #C8F131;
+    font-size: 0.94rem;
+    font-weight: 500;
+    text-align: center;
+    align-content: center;
+}
+/* footer end */
